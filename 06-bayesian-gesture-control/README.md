@@ -7,7 +7,7 @@ Sistem de control al accesului în care codul de deblocare se introduce printr-o
 
 Intrarea vine dintr-un flux video, dar problema rezolvată este una de automatizare: **conducerea unui proces secvențial pe baza unui semnal de măsură zgomotos**, cu filtrare, temporizări de stabilizare, interblocări de siguranță și comunicație serială către un controler de ieșiri.
 
-![Detecția mâinii și estimarea numărului de degete](docs/detectie-mana.png)
+![Detecția mâinii și estimarea numărului de degete](images/detectie-mana.png)
 
 ---
 
@@ -31,7 +31,7 @@ Structura buclei principale respectă același tipar ca ciclul de scanare al unu
 
 ## Arhitectura sistemului
 
-![Arhitectura generală a sistemului](docs/arhitectura-sistem.png)
+![Arhitectura generală a sistemului](images/arhitectura-sistem.png)
 
 Sistemul e organizat pe trei niveluri:
 
@@ -89,7 +89,7 @@ calculată prin convoluție. Se rețin valoarea cea mai probabilă (estimatorul 
 PASSWORD = [4, 3, 0, 2]
 ```
 
-![Secvența de deblocare și feedback-ul pe LED-uri](docs/secventa-deblocare.png)
+![Secvența de deblocare și feedback-ul pe LED-uri](images/secventa-deblocare.png)
 
 Procesul avansează pas cu pas, fiecare tranziție fiind condiționată de o cifră corectă menținută stabil. Mecanismele implementate:
 
@@ -107,13 +107,13 @@ Aceleași mecanisme — pași, tranziții condiționate, temporizări de validar
 
 ## Montajul hardware
 
-![Montajul: Arduino și cele 5 LED-uri pe breadboard](docs/montaj-hardware.png)
+![Montajul: Arduino și cele 5 LED-uri pe breadboard](images/montaj-hardware.png)
 
 - Placă Arduino Uno (compatibilă), conectată prin USB
 - 5 LED-uri pe ieșirile digitale **8, 9, 10, 11, 12**, în ordinea Thumb, Index, Middle, Ring, Pinky
 - Cameră web
 
-![Sistemul în funcțiune](docs/montaj-in-functiune.png)
+![Sistemul în funcțiune](images/montaj-in-functiune.png)
 
 ## Protocolul de comunicație
 
@@ -146,7 +146,7 @@ if (Serial.available() >= 5) { ... }
 ├── arduino/led_controller/
 │   └── led_controller.ino               # firmware: citește 5 octeți pe serial, comandă 5 ieșiri
 ├── requirements.txt
-├── docs/                                # schema bloc, capturi de ecran, poze montaj
+├── images/                                # schema bloc, capturi de ecran, poze montaj
 └── README.md
 ```
 
