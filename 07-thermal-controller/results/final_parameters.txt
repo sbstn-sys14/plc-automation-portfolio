@@ -1,0 +1,18 @@
+CONFIGURATIA FINALA
+===================
+Kp = 450 W/°C
+Ki = 0.0225 W/(°C*s)
+Ti = 20000 s
+Te = 60 s
+Tf = 120 s
+Pmax = 6000 W
+q = 0.1 °C
+sigma_noise = 0.2 °C
+
+PERFORMANTE NOMINALE
+====================
+Eroare stationara = 0.011041 °C
+Suprareglaj = 4.764364 %
+Timp stabilire referinta = 5.283333 h
+Abatere perturbatie = 1.692907 °C
+Timp restabilire perturbatie = 11.666667 h
